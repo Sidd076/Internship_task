@@ -1,0 +1,23 @@
+{
+    "products": [
+      {
+        "name": "Product 1",
+        "imageURL": "src/product1.png",
+        "description": "Lorem ipsum dolor sit amet consec",
+        "price": 19.99
+      },
+      {
+        "name": "Product 2",
+        "imageURL": "src/product2.png",
+        "description": "Lorem ipsum dolor sit amet consec",
+        "price": 29.99
+      },
+      {
+        "name": "Product 3",
+        "imageURL": "src/product3 (2).png",
+        "description": "Lorem ipsum dolor sit amet consec",
+        "price": 39.99
+      }
+    ]
+  }
+  

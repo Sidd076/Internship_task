@@ -1,0 +1,273 @@
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Bold.otf') format('opentype'), 
+         url('fonts/Gilroy-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy'; 
+}
+
+header {
+    background-color: rgb(104, 104, 250); 
+    color: #fff;
+    padding-top: 3px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.section {
+    position: relative; 
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center; 
+    min-height: 700px; 
+}
+
+.section p{
+    font-size: 20px;
+}
+
+.section-1 {
+    background-image: url('src/section1\ \(2\).jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section-1-content {
+    position: absolute;
+    top: 50%; 
+    left: 72%; 
+    transform: translate(-50%, -50%);
+    color: #090101;
+    max-width: 500px;
+    padding: 20px;
+
+    text-align: left;
+    font-size: 30px;
+}
+
+.section-1-text {
+    padding-top: 0%;
+    margin-bottom:20px;
+    text-align: left;
+}
+.section-1-text h1{
+    font-size: 50px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #0973ee;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    display: block; 
+    margin-top: 10px;
+}
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.product {
+    width: 30%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    font-size: 30px;
+    
+}
+
+
+.product img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+  
+}
+
+/* Product information */
+.product-info {
+    padding: 10px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-desc {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-discounted-price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #e71d36;
+    margin-bottom: 5px;
+    display: none;
+}
+
+
+footer {
+    background-color: #edeef2;
+    color: #080101;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+footer p{
+    display: inline-block;
+    font-size: 24px;
+    text-align: left;
+    font-weight: bold;
+    
+}
+
+
+header p {
+    font-size: 24px; 
+    margin-bottom: 5px; 
+}
+header span {
+    font-size: 18px; 
+}
+.social-icons {
+    display:inline-block;
+    justify-content:right;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    margin: 5px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    background-color: #555;
+}
+.section-3 {
+    background-image: url('src/section3.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #070000; 
+    padding: 20px;
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+.section-3-content h1{
+    font-size: 50px;
+}
+.section-3-content button{
+    padding: 10px 20px;
+    background-color: #0973ee;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    display: block; 
+    margin-left: 200px; 
+}
+.product-info button{
+    padding: 10px 20px;
+    background-color: #0973ee;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+/* Add your other CSS styles here */
+
+/* CSS for desktop view */
+
+/* Your existing CSS code */
+
+/* Media Query for Tablet View */
+@media screen and (max-width: 768px) {
+    .section-1-content {
+        max-width: 400px;
+    }
+
+    .product-container {
+        flex-direction: column;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .product img {
+        height: auto;
+    }
+
+    .section-3-content button {
+        margin-left: 0;
+    }
+    .section-1 {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* Media Query for Mobile View */
+@media screen and (max-width: 480px) {
+    .section-1-content {
+        max-width: 300px;
+    }
+
+    .section-1-text h1 {
+        font-size: 40px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .product img {
+        height: 700px;
+    }
+
+    .product-info button {
+        font-size: 14px;
+    }
+    .section-1 {
+        background-size: cover;
+        background-position: center;
+    }
+}
